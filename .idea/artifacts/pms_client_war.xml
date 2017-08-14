@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pms-client:war">
+    <output-path>$PROJECT_DIR$/pms-client/target</output-path>
+    <root id="archive" name="pms-client.war">
+      <element id="artifact" artifact-name="pms-client:war exploded" />
+    </root>
+  </artifact>
+</component>

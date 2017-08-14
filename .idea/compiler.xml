@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pms-client" />
+        <module name="pms-commons" />
+        <module name="pms-dao" />
+        <module name="pms-domain" />
+        <module name="pms-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="pms" target="1.5" />
+      <module name="pms-client" target="1.5" />
+      <module name="pms-commons" target="1.5" />
+      <module name="pms-dao" target="1.5" />
+      <module name="pms-domain" target="1.5" />
+      <module name="pms-service" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/pms.iml" filepath="$PROJECT_DIR$/pms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pms-client/pms-client.iml" filepath="$PROJECT_DIR$/pms-client/pms-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pms-commons/pms-commons.iml" filepath="$PROJECT_DIR$/pms-commons/pms-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pms-dao/pms-dao.iml" filepath="$PROJECT_DIR$/pms-dao/pms-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pms-domain/pms-domain.iml" filepath="$PROJECT_DIR$/pms-domain/pms-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pms-service/pms-service.iml" filepath="$PROJECT_DIR$/pms-service/pms-service.iml" />
+    </modules>
+  </component>
+</project>
