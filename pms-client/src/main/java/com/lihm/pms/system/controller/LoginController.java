@@ -1,6 +1,5 @@
 package com.lihm.pms.system.controller;
 
-import com.lihm.pms.system.service.adminManager.AdminManagerService;
 import com.lihm.pms.system.service.adminManager.impl.AdminManagerServiceImpl;
 import com.lihm.pms.system.util.Result;
 import com.lihm.pms.system.vo.user.AdminVo;
@@ -9,19 +8,21 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.security.cert.PKIXCertPathBuilderResult;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Controller
 @RequestMapping("/index")
 public class LoginController {
-
+	private static final Logger LOGGER = LoggerFactory.getLogger(LoginController.class);
 	@Autowired
 	private AdminManagerServiceImpl adminManagerService;
 	
 	@RequestMapping("/login")
 	@ResponseBody
 	public Result<String> index( String username, String password){
+		LOGGER.info("**********");
+
 		Result<String> result = new Result(Result.Type.FAILURE);
 		AdminVo vo = adminManagerService.getAdminInfoByCode(username);
 		if (null == vo){

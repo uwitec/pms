@@ -22,7 +22,7 @@ public class AdminVo extends AbstractEntityVo {
     //管理员类型（0：超级管理员，1：普通管理员）
     private String type;
     //电话
-    private String telphione;
+    private String telphone;
 
     public String getName() {
         return userName;
@@ -80,11 +80,11 @@ public class AdminVo extends AbstractEntityVo {
         this.type = type;
     }
 
-    public String getTelPhione() {
-        return telphione;
+    public String getTelphone() {
+        return telphone;
     }
 
-    public void setTelPhione(String telPhione) {
-        this.telphione = telPhione;
+    public void setTelphone(String telphone) {
+        this.telphone = telphone;
     }
 }

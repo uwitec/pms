@@ -26,7 +26,7 @@
             <include refid="Base_Column_List" />
         FROM pms_admin_info
         WHERE 1=1
-        <include refid="pmsConditions" />
+          AND user_code=#{userCode}
     </select>
 
     <!-- 查询条件 -->
@@ -46,26 +46,26 @@
         <if test="lastModifiedDate != null">
             AND last_modified_date = #{lastModifiedDate,jdbcType=TIMESTAMP}
         </if>
-        <if test="user_name != null">
-            AND user_name = #{userName,jdbcType=TIMESTAMP}
+        <if test="userName != null">
+            AND user_name = #{userName,jdbcType=VARCHAR}
         </if>
-        <if test="user_code != null">
-            AND user_code = #{userCode,jdbcType=TIMESTAMP}
+        <if test="userCode != null">
+            AND user_code = #{userCode,jdbcType=VARCHAR}
         </if>
         <if test="password != null">
-            AND password = #{password,jdbcType=TIMESTAMP}
+            AND password = #{password,jdbcType=VARCHAR}
         </if>
         <if test="status != null">
-            AND status = #{status,jdbcType=TIMESTAMP}
+            AND status = #{status,jdbcType=VARCHAR}
         </if>
         <if test="email != null">
-            AND email = #{email,jdbcType=TIMESTAMP}
+            AND email = #{email,jdbcType=VARCHAR}
         </if>
         <if test="telphone != null">
-            AND telphone = #{telphone,jdbcType=TIMESTAMP}
+            AND telphone = #{telphone,jdbcType=VARCHAR}
         </if>
         <if test="type != null">
-            AND type = #{type,jdbcType=TIMESTAMP}
+            AND type = #{type,jdbcType=VARCHAR}
         </if>
     </sql>
 </mapper>
